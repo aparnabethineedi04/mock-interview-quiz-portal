@@ -1,0 +1,27 @@
+# Python Bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.env
+env/
+venv/
+ENV/
+
+# Django Database and Media
+*.log
+db.sqlite3
+db.sqlite3-journal
+media/
+
+# IDE / Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS Generated
+.DS_Store
+Thumbs.db

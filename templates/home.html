@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Interview & Quiz Portal - Setup Complete</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            min-height: 100vh;
+            color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        .card-custom {
+            background: rgba(30, 41, 59, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        .badge-pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.85; transform: scale(1.05); }
+        }
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            background-color: #10b981;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <div class="card card-custom p-4 p-md-5 text-white">
+                    <div class="d-flex align-items-center justify-content-between mb-4 pb-3 border-bottom border-secondary">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="bg-primary text-white p-3 rounded-circle d-flex align-items-center justify-content-center" style="width: 54px; height: 54px;">
+                                <i class="bi bi-mortarboard-fill fs-3"></i>
+                            </div>
+                            <div>
+                                <h3 class="mb-0 fw-bold">Mock Interview & Quiz Portal</h3>
+                                <small class="text-secondary">Full-Stack Django & MySQL Portfolio Project</small>
+                            </div>
+                        </div>
+                        <span class="badge bg-success bg-opacity-25 text-success border border-success px-3 py-2 rounded-pill badge-pulse">
+                            <span class="status-dot"></span> Stage 1 Active
+                        </span>
+                    </div>
+
+                    <div class="alert alert-dark border border-secondary text-light mb-4">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                            <strong class="text-white">Backend & Database Connected Successfully!</strong>
+                        </div>
+                        <p class="mb-0 text-secondary small">Django 3.2 is running and connected to MySQL (<code>quiz_portal_db</code>) using secure environment variables.</p>
+                    </div>
+
+                    <h5 class="fw-bold mb-3 text-light"><i class="bi bi-list-check text-primary me-2"></i>Project Roadmap & Stages</h5>
+                    <div class="list-group list-group-flush rounded-3 mb-4 bg-transparent">
+                        <div class="list-group-item bg-dark bg-opacity-50 text-light border-secondary d-flex justify-content-between align-items-center py-2">
+                            <span><strong class="text-success"><i class="bi bi-check2-circle me-2"></i>Stage 1:</strong> Project Setup & MySQL Connection</span>
+                            <span class="badge bg-success text-white">Completed</span>
+                        </div>
+                        <div class="list-group-item bg-dark bg-opacity-25 text-light border-secondary d-flex justify-content-between align-items-center py-2">
+                            <span><strong>Stage 2:</strong> Normalized Database Models & ER Diagram</span>
+                            <span class="badge bg-warning text-dark">Next Stage</span>
+                        </div>
+                        <div class="list-group-item bg-dark bg-opacity-25 text-muted border-secondary d-flex justify-content-between align-items-center py-2">
+                            <span><strong>Stage 3:</strong> Authentication & Role-Based Permissions</span>
+                            <span class="badge bg-secondary">Upcoming</span>
+                        </div>
+                        <div class="list-group-item bg-dark bg-opacity-25 text-muted border-secondary d-flex justify-content-between align-items-center py-2">
+                            <span><strong>Stage 4 & 5:</strong> Admin Quiz Management & Student Quiz Engine</span>
+                            <span class="badge bg-secondary">Upcoming</span>
+                        </div>
+                        <div class="list-group-item bg-dark bg-opacity-25 text-muted border-secondary d-flex justify-content-between align-items-center py-2">
+                            <span><strong>Stage 6 & 7:</strong> Performance Analytics (Chart.js) & REST API (DRF)</span>
+                            <span class="badge bg-secondary">Upcoming</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center pt-3 border-top border-secondary">
+                        <span class="text-secondary small">Ready to start Stage 2 in chat</span>
+                        <a href="/admin/" class="btn btn-outline-light btn-sm px-3">
+                            <i class="bi bi-shield-lock me-1"></i> Django Admin
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
